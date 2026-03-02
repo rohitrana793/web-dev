@@ -1,0 +1,275 @@
+<!-- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is my first web page" />
+    <title>Document</title>
+    <style>
+      @media (min-width: 400px) {
+        img {
+          width: 20px;
+        }
+      }
+
+     @media (max-width: 400px) {
+        img {
+          width: 20px;
+        }
+      }
+
+
+  
+      @media (max-width: 400px) {
+        body {
+          background-color: red;
+        }
+      }
+
+    
+
+@media (min-width: 400px) {
+body {
+background-color: red;
+}
+}
+</style>
+
+  </head>
+  <body>
+    <img
+      src="https://images.unsplash.com/photo-1761839257661-c2392c65ea72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+      alt=""
+    />
+  </body>
+</html> -->
+
+
+<!------------------- HTML START FROM HERE --------------------->
+
+//-------------------DAY-1------------------------//
+1. HTML elements and tags
+   <tagname>content goes here</tagname>
+2. heading tags and paragraph tags
+   (h1 to h6) and <p>lorem</p>
+3. superscript and subscript tags
+<sup></sup> and <sub></sub>
+examples:
+   <h1>2<sup>nd</sup></h1>
+   <h1>h<sub>2</sub>o</h1>
+4. em tag
+5. strong tag
+6. block and inline elements
+   Block elements take whole width of the page.
+   Inline elements take only content width or required width.
+7. break tag <br>
+8. space tag &nbsb;
+9. listing tags
+  1.ordered list
+      <ol type="a">
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li
+      <li>Cherry</li>
+      <li>Watermelon</li>
+    </ol>
+  2.unordered list
+     <ul>
+      <li>Reading</li>
+      <li>Dancing</li>
+      <li>Coding</li>
+    </ul>
+//-------------------DAY-1------------------------//
+
+//-------------------DAY-2------------------------//
+10. Image tag
+    <img
+      src="./assets/images/01_forza7_porsche_gt2rs_02_4k_v2_noflag.jpg"
+      alt="car"
+      height="200px"
+      width="200px"
+    />
+11. video and audio tag
+
+    <h3>my fav video</h3>
+    <video
+      height="200px"
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+      controls
+      autoplay
+      muted
+      loop
+    ></video>
+    
+    <h3>my fav audio</h3>
+    <audio
+      src="https://s3.amazonaws.com/scifri-episodes/scifri20181123-episode.mp3"
+      controls
+    ></audio>
+12. iframe tag
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/t9MJ1gxcJ4w?si=UtQ1RgY9foaFBPhu"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+13. Anchor tag <a></a>
+    <strong><a href="contact.html">Contact Us</a></strong>
+    <strong
+      ><a href="https://unsplash.com/" target="_blank">Unsplash</a></strong
+    >
+    <strong><a href="#bottom">Scroll to down</a></strong>
+    <h1><a name="bottom">Bottom Section</a></h1>
+14. Table tag
+    <!-- first way to create table -->
+  <table border="1px" cellspacing="0" cellpadding="10px">
+      <tr>
+        <td>Subject</td>
+        <td>Marks</td>
+        <!-- <td rowspan="2">Marks</td> -->
+      </tr>
+      <tr>
+        <!-- <td colspan="2">Math</td>
+        <td>60</td> -->
+        <td>Math</td>
+        <td>
+          <table border="1px">
+            <tr>
+              <td>hello</td>
+              <td>sello</td>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>200</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    // task
+       <table border="1px" cellspacing="0" cellpadding="10px">
+      <tr>
+        <td>subject</td>
+        <td>grade q1</td>
+        <td>grade q2</td>
+        <td>grade q3</td>
+      </tr>
+      <tr>
+        <td>science</td>
+        <td>78</td>
+        <td>84</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>c math</td>
+        <td>65</td>
+        <td>84</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>social</td>
+        <td>78</td>
+        <td>84</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>health & popualtion</td>
+        <td>78</td>
+        <td>84</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>nepali</td>
+        <td>78</td>
+        <td>84</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>total</td>
+        <td>86</td>
+        <td>83</td>
+        <td>91</td>
+      </tr>
+    </table>
+15. Form tag
+<!-- name="q" -->
+    <!-- <form action="https://www.google.com/search"> -->
+    <!-- 
+    form attributes:-
+    required 
+    readonly
+    maxlength
+    minlength
+     -->
+    <form action="mailto:rohit335157@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label for="">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="@example.com"
+        />
+      </p>
+      <p>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="johh" />
+      </p>
+
+      <p>
+        <h3>select your gender</h3>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </p>
+
+      <p>
+        <h3>select your habits</h3>
+        <label for="dance">dance</label>
+        <input type="checkbox" name="habits" id="dance" value="dance" />
+        <label for="sing">sing</label>
+        <input type="checkbox" name="habits" id="sing" value="sing" />
+      </p>
+
+      <p>
+        <h3>Select your country</h3>
+        <select name="country" id="country">
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <optgroup label="Select Asian Country">
+            <option value="srilanka">Srilanka</option>
+            <option value="bangladesh">Bangladesh</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <textarea name="msg" id="" placeholder="type message" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+        <label for="date">Please provide date:</label>
+        <input type="date" name="date" id="date">
+      </p>
+     
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>

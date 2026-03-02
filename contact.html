@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact Page</h1>
+
+    <!-- name="q" -->
+    <!-- <form action="https://www.google.com/search"> -->
+    <!-- 
+    form attributes:-
+    required 
+    readonly
+    maxlength 
+    minlength
+     -->
+    <form action="mailto:rohit335157@gmail.com" method="post" enctype="text/plain">
+      <p>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="@example.com"
+        />
+      </p>
+      <p>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="johh" />
+      </p>
+
+      <p>
+        <h3>select your gender</h3>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+      </p>
+
+      <p>
+        <h3>select your habits</h3>
+        <label for="dance">dance</label>
+        <input type="checkbox" name="habits" id="dance" value="dance" />
+        <label for="sing">sing</label>
+        <input type="checkbox" name="habits" id="sing" value="sing" />
+      </p>
+
+      <p>
+        <h3>Select your country</h3>
+        <select name="country" id="country">
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+          <optgroup label="Select Asian Country">
+            <option value="srilanka">Srilanka</option>
+            <option value="bangladesh">Bangladesh</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <textarea name="msg" id="" placeholder="type message" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+        <label for="date">Please provide date:</label>
+        <input type="date" name="date" id="date">
+      </p>
+     
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
