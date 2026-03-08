@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naming</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+      }
+
+      main {
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "leftNav topArticle topArticle topArticle topArticle"
+          "leftNav leftArticle leftArticle rightArticle rightArticle"
+          "footer footer footer footer footer";
+        grid-template-rows: repeat(4, 150px);
+      }
+
+      /* Naming */
+      header {
+        grid-area: header;
+        background-color: skyblue;
+      }
+      .left-nav {
+        grid-area: leftNav;
+        background-color: yellow;
+      }
+      .top-article {
+        grid-area: topArticle;
+        background-color: pink;
+      }
+      .left-article {
+        grid-area: leftArticle;
+        background-color: blue;
+      }
+      .right-article {
+        grid-area: rightArticle;
+        background-color: silver;
+      }
+      footer {
+        grid-area: footer;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Header</h1>
+      </header>
+      <div class="left-nav">
+        <h1>Left Nav</h1>
+      </div>
+      <div class="top-article">
+        <h1>Top Article</h1>
+      </div>
+      <div class="left-article">
+        <h1>Left Article</h1>
+      </div>
+      <div class="right-article">
+        <h1>Right Article</h1>
+      </div>
+      <footer><h1>Footer</h1></footer>
+    </main>
+  </body>
+</html>

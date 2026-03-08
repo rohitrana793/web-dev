@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+      }
+
+      .bx {
+        max-width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .item1 {
+        background-color: red;
+        /* grid-row: 1/4; */
+        grid-row: span 3;
+      }
+      .item2 {
+        background-color: blue;
+        /* grid-column: 2/4; */
+        grid-column: span 2;
+      }
+      .item3 {
+        background-color: yellowgreen;
+      }
+      .item4 {
+        background-color: turquoise;
+      }
+      .item5 {
+        background-color: tomato;
+      }
+      .item6 {
+        background-color: green;
+        grid-column: 4/5;
+        grid-row: 2/4;
+        /* grid-row: span 2; */
+      }
+      .item7 {
+        background-color: purple;
+      }
+      .item8 {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bx">
+      <div class="item item1">
+        <h3>box1</h3>
+      </div>
+      <div class="item item2">
+        <h3>box2</h3>
+      </div>
+      <div class="item item3">
+        <h3>box3</h3>
+      </div>
+      <div class="item item4">
+        <h3>box4</h3>
+      </div>
+      <div class="item item5">
+        <h3>box5</h3>
+      </div>
+      <div class="item item6">
+        <h3>box6</h3>
+      </div>
+      <div class="item item7">
+        <h3>box7</h3>
+      </div>
+      <div class="item item8">
+        <h3>box8</h3>
+      </div>
+    </div>
+  </body>
+</html>
